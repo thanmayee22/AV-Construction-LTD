@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/23c9842fb0.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ul#K {
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+background-color:#333;
+opacity:0.4;
+}
+li#P {
+float:center;
+}
+li a{
+display:block;
+color:white;
+text-align:center;
+padding:14px 16px;
+text-decoration:none;
+}
+li a:hover{
+background-color:#111;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+<!--overview box with img-->
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  top:0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 23px;
+}
+<!--.pro {
+float:right;
+width:25%;
+}-->
+.about{
+width:72%;
+float:left;
+background-color:#ffff1a;
+border-radius:25px;
+}
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  float:left;
+}
+.column {
+  flex:25%;
+  padding: 0px;
+}
+
+.align1{
+float:left;
+width:25%;
+margin-left:0px;
+margin-right:auto;
+padding:20px;
+text-align:center;
+}
+
+.globe {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.center {
+  position: absolute;
+  top: 50px;
+  left: 36%;
+  color:black;
+  padding:30px;
+  font-size:30px;
+}
+
+
+.vl {
+  border-left: 2px solid #696969;
+  height: 340px;
+  position: absolute;
+  left: 33%;
+  margin-left: -3px;
+  top: 17px;
+}
+.vl2 {
+  border-right: 2px solid #696969;
+  height: 340px;
+  position: absolute;
+  right: 33%;
+  margin-right: -3px;
+  top: 17px;
+}
+.contain{
+position:relative;
+background-color:rgba(0,0,0,0.7);
+width:100%;
+}
+.elements{
+float:left;
+width:33.333333333%;
+background-color:rgba(0,0,0,0.7);
+padding:30px;
+text-align:center;
+color:#ddd;
+}
+img.round {
+  border-radius: 50%;
+}
+.footer {
+   left: 0;
+   top:0px;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   background-color:rgba(0,0,0,0.7);
+   text-align: center;
+   padding:18px;
+}
+
+
+.fa {
+  bottom:400px;
+  padding: 10px;
+  font-size: 20px;
+  width:37px;
+  height:37px;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  bottom:-9px;
+  position:relative;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  bottom:-9px;
+  position:relative;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  bottom:-9px;
+  position:relative;
+  color: white;
+}
+.fa-instagram {
+  color: white;
+   background: #d6249f;
+   bottom:-9px;
+   position:relative;
+   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+
+<!-- float nav -->
+.bg-img {
+  position: sticky;
+}
+
+.container1 {
+position:absolute;
+  width: 100%;
+    top:0;
+}
+#nav{
+  overflow: hidden;
+  background-color: #333;
+   position: fixed;
+  top: -60px;
+  display: block;
+  width:100%;
+  transition: top 0.3s;
+}
+#nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 30px;
+  text-decoration: none;
+  font-size: 19px;
+}
+#nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+.span a:hover {
+background-color:rgba(0,0,0,0.0);
+}
+.akp{
+padding:15px;
+font-size:15px;
+top:12px;
+color:white;
+text-align:center;
+}
+</style>
+</head>
+
+<body>
+<div style="background-image:url('grd-2-2018-engineering-stage.jpeg');width:100%;background-size:cover;height:500;background-repeat:no-repeat;">
+<ul id="K">
+<li id="P"><a href="#">HOME</a></li>
+<li><a href="file:///C:/Users/aksha/OneDrive/Desktop/HTM/about.htm">ABOUT US</a></li>
+<li><a href="file:///C:/Users/aksha/OneDrive/Desktop/HTM/work.htm">OUR WORK</a></li>
+<li><a href="file:///C:/Users/aksha/OneDrive/Desktop/HTM/services.htm">SERVICES</a></li>
+<li><a href="file:///C:/Users/aksha/OneDrive/Desktop/HTM/contact.htm">CONTACT</a></li>
+</ul>
+<img src="helm-helmet-maintain-construction-building-logo-template-helm-helmet-maintain-construction-building-logo-template-207666599.jpg" class="round" alt="logo" width="70" height="70" style="width:auto;">
+<h1 style="color:white;text-align:center;">AV CONSTRUCTION LTD.</h1>
+<br>
+<br>
+<h4 style="color:white;text-align:center;">ALL OUR WORK IS CARRIED OUT TO THE HIGHEST STANDARD</h4>
+<br>
+<br>
+</div>
+<br><br><br>
+
+<div class="container">
+  <img src="https://www.clipartkey.com/mpngs/m/286-2862844_transparent-futuristic-city-clipart-transparent-background-building-png.png" alt="Notebook" style="width:100%;">
+  <div class="content">
+  <br>
+<h1>OVERVIEW</h1>
+<br>
+<p>We have rich experience in executing civil,electrical,mechanical and waterworks for multiple industries 
+like steel,power,metals,etc.<br>We have in-house design and engineering teams that employ advanced construction methods to execute complex projects in diverse terrains.<br>With a background in infrastructure,commercial,and residential construction, we bring our valuable expertise to every project and are hence the preferred civil construction company.
+<br><br>
+Our electrical construction company arm specializes in fast track building projects with a well-trained, highly skilled workforce. Our highly efficient approach to projects, along with ensuring their quality and timely completion, has made us a top construction company and electrical construction company in India.
+<br><br>
+As a leading civil construction company and electrical construction company in India, we offer key advantages such as:
+<br>
+<ul style="list-style-type:square;">
+<li>Design Review & Development</li>
+<li>Value Engineering</li>
+<li>Engineering Calculations</li>
+<li>Equipment Selections</li>
+<li>Planning & Coordination</li>
+<li>Procurement& Inspection</li>
+<li>Installation & Project Management</li>
+<li>Testing & Commissioning</li>
+</ul>
+<br>
+This ensures that projects are delivered as planned to the client. Our expertise and commitment to timely execution of projects has made us one of the leading players in India’s construction industry.</p>
+<br><br><br>
+</div>
+</div>
+<!--<div class="pro">
+<br><br>
+<h3 style="text-align:center;">EXPLORE</h3>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Ah, construction robots, efficient and calming to watch <a href="https://t.co/84cXvnvmlF">pic.twitter.com/84cXvnvmlF</a></p>&mdash; Mashable (@mashable) <a href="https://twitter.com/mashable/status/1377492672005345282?ref_src=twsrc%5Etfw">April 1, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Under construction Zuari River Bridge features as Engineering Marvels Episode on History TV18 <a href="https://t.co/a7R2uOUdqs">https://t.co/a7R2uOUdqs</a> via @<a href="https://twitter.com/goanewshub?ref_src=twsrc%5Etfw">@goanewshub</a></p>&mdash; Goa News Hub (@goanewshub) <a href="https://twitter.com/goanewshub/status/1376843364650283010?ref_src=twsrc%5Etfw">March 30, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">We made 3 world records this month. India now holds world record for fastest road construction. We made it to Guinness World Records by building a 2.5 km 4-lane concrete road within 24 hrs also built 1-lane 25-km bitumen Solapur-Bijapur road within 24 hrs: Union Min Nitin Gadkari</p>&mdash; ANI UP (@ANINewsUP) <a href="https://twitter.com/ANINewsUP/status/1377907976900542470?ref_src=twsrc%5Etfw">April 2, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>-->
+
+<div class="row">
+<br><br>
+  <div class="column">
+    <img src="images.jpg" alt="S" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="0_5_8_1862058_constructionsite_942146.jpg" alt="p" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="08fd5ccb854199f807f86bfa5a8fd3f1.jpg" alt="M" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="download.jpg" alt="M" style="width:100%">
+  </div>
+</div>
+<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+<br>
+
+
+<div class="w3-padding w3-jumbo" style="background-color:#FFE4E1;">
+<h1 style="color:black;margin-left:24px;">AWARDS</h1>
+<div class="align1 w3-padding w3-jumbo" style="background-color:#FFE4E1;">
+<i class="fas fa-trophy" style="margin-left:20px;"></i>
+<p style="font-size:25px;color:#312E38;">Fastest Growing Construction Company in India 2020</p>
+</div>
+<div class="align1 w3-padding w3-jumbo" style="background-color:#FFE4E1;">
+<i class="fas fa-trophy" style="margin-left:20px;"></i> 
+<p style="font-size:25px;color:#312E38;">Best Construction Project award for Zuari River Bridge Project</p>
+</div>
+<div class="align1 w3-padding w3-jumbo" style="background-color:#FFE4E1;">
+<i class="fas fa-trophy" style="margin-left:20px;"></i>
+<p style="font-size:25px;color:#312E38;">GOLDEN AWARD for Largest Construction Contractor</p>
+</div>
+<div class="align1 w3-padding w3-jumbo" style="background-color:#FFE4E1;">
+<i class="fas fa-trophy" style="margin-left:20px;"></i>
+<p style="font-size:25px;color:#312E38;">Top International Contracting Firm of the year 2020</p>
+</div>
+</div>
+<div style="padding:20px;background-color:#FFE4E1;"><button onclick="myfunc()"> VIEW ALL AWARDS <i class="fas fa-trophy"></i></button>
+<script>
+function myfunc()
+{
+location.replace("file:///C:/Users/aksha/OneDrive/Desktop/HTM/me.html")
+}
+</script>
+</div>
+<br><br>
+
+<div class="globe">
+<br><br>
+<img src="xmap-tile.png.pagespeed.ic.OXkB5PFvnH.webp" alt="Global" style="border:7px solid black;width:100%;">
+<div class="center"><b>GLOBAL PRESENCE</b></div>
+</div>
+
+
+<div class="contain">
+<div class="elements">
+<img src="ap1.jpg" class="round" alt="img" style="width:100px;">
+<br>
+<h4><b>Akshar Patel</b></h4>
+<p style="color:#696969;">CEO & Founder</p>
+<p><a href="">akshar07@gmail.com</a></p>
+<br>
+<button onclick="">Contact</button>
+</div>
+<div class="vl"></div>
+<div class="elements">
+<img src="v2.jpg" class="round" alt="img" style="width:100px;">
+<br>
+<h4><b>Vishnu Vardhan</b></h4>
+<p style="color:#696969;">CFO & President</p>
+<p><a href="">Vishnu88@gmail.com</a></P>
+<br>
+<button onclick="">Contact</button>
+</div>
+<div class="vl2"></div>
+<div class="elements">
+<img src="tan1.jpg" class="round" alt="img" style="width:100px;">
+<br>
+<h4><b>Thanmayee Reddy</b></h4>
+<p style="color:#696969;">Managing Director</p>
+<p><a href="">thanmayee26@gmail.com</a></p>
+<br>
+<button onclick="">Contact</button>
+</div>
+<div class="footer">
+
+ <b style="text-align:center;margin-right:1%;padding:25px;font-family:Arial;">Copyright <i class="far fa-copyright"></i> 2021- AV CONSTRUCTION LTD. All Rights Reserved<span style="color:rgba(0,0,0,0.0);">AV CONSTRUCTION -</span></b>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-linkedin"></a>
+
+</div>
+</div>
+
+<div class="bg-img">
+  <div class="container1">
+    <div id="nav">
+      <img src="360_F_320947583_DsP6EGSsdKNKSL2k29OlEAexGbsywCsz.jpg" width="58" height="58" style="float:left;opacity:1.0;border-radius:50%;margin-left:30px;">
+	  	<span class="span">  <a style="color:white;padding:19px 14px;font-size:14px;font-family:Arial;"><b>AV CONSTRUCTION LTD.</b></a></span>      
+	  <a class="a" href="#">HOME</a>
+      <a class="a" href="file:///C:/Users/aksha/OneDrive/Desktop/HTM/about.htm">ABOUT US</a>
+      <a class="a" href="file:///C:/Users/aksha/OneDrive/Desktop/HTM/work.htm">OUR WORK</a>
+      <a class="a" href="file:///C:/Users/aksha/OneDrive/Desktop/HTM/services.htm">SERVICES</a>
+	  <a class="a" href="file:///C:/Users/aksha/OneDrive/Desktop/HTM/contact.htm">CONTACT</a>
+    </div>
+  </div>
+</div>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 530 || document.documentElement.scrollTop > 530) {
+    document.getElementById("nav").style.top = "0";
+  } else {
+    document.getElementById("nav").style.top = "-60px";
+  }
+}
+</script>
+<!--
+<footer>
+<div class="footer">
+<p>footer</p>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+</div>
+</footer>
+-->
+</body>
+</html>

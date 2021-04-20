@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/23c9842fb0.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.bg-img {
+  background-image: url("construction-services.jpg");
+  min-height: 540px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: sticky;
+}
+.container {
+  position: fixed;
+  width: 100%;
+  <!--opacity:0.7;-->
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 30px;
+  text-decoration: none;
+  font-size: 19px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.span a:hover {
+background-color:rgba(0,0,0,0.0);
+}
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.leftalign{
+float:left;
+width:50%;
+background:rgba(30,144,255,0.4);
+padding:35px;
+margin-top:86px;
+border: 7px solid #ddd;
+}
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+.signupbtn button {
+  background-color: dodgerblue ;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.signupbtn button:hover {
+  opacity:1;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+ .signupbtn {
+  float: center;
+  width: auto;
+  position:relative;
+}
+
+/* Add padding to container elements */
+.container1 {
+  padding: 30px;
+  margin:70px;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: rgba(30,144,255,0.4);
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .signupbtn {
+     width: 100%;
+  }
+}
+
+
+.vl {
+  border-left: 2px solid #696969;
+  height: 340px;
+  position: absolute;
+  left: 33%;
+  margin-left: -3px;
+  top: 22px;
+}
+.vl2 {
+  border-right: 2px solid #696969;
+  height: 340px;
+  position: absolute;
+  right: 33%;
+  margin-right: -3px;
+  top: 22px;
+}
+.contain{
+position:relative;
+background-color:rgba(0,0,0,0.7);
+width:100%;
+}
+.elements{
+float:left;
+width:33.333333333%;
+background-color:rgba(0,0,0,0.7);
+padding:30px;
+text-align:center;
+color:#ddd;
+}
+img.round {
+  border-radius: 50%;
+}
+.footer {
+   left: 0;
+   top:0px;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   background-color:rgba(0,0,0,0.7);
+   text-align: center;
+   padding:18px;
+}
+
+
+.fa {
+  bottom:400px;
+  padding: 10px;
+  font-size: 20px;
+  width:37px;
+  height:37px;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  bottom:-9px;
+  position:relative;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  bottom:-9px;
+  position:relative;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  bottom:-9px;
+  position:relative;
+  color: white;
+}
+.fa-instagram {
+  color: white;
+   background: #d6249f;
+   bottom:-9px;
+   position:relative;
+   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+   box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+
+</style>
+<script>
+var subjectObject = {
+  "Renovation & Maintenance": {
+  }
+  ,
+  "Construction ": {
+  
+  }
+  ,
+  "Transmission & Distribution": {
+  }
+  ,
+  "Urban Infrastructure": {
+  }
+  ,
+  "Smart City": {
+  }
+  ,
+  "Quality Services>Quality Inspection": {
+  }
+  ,
+  "Quality Services>Utility Services": {
+  }
+  ,
+  "Job Enquiry": {
+  } 
+}
+window.onload = function() {
+  var subjectSel = document.getElementById("subject");
+  var topicSel = document.getElementById("topic");
+  var chapterSel = document.getElementById("chapter");
+  for (var x in subjectObject) {
+    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+  }
+  subjectSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    chapterSel.length = 1;
+    topicSel.length = 1;
+    //display correct values
+    for (var y in subjectObject[this.value]) {
+      topicSel.options[topicSel.options.length] = new Option(y, y);
+    }
+  }
+  topicSel.onchange = function() {
+    //empty Chapters dropdown
+    chapterSel.length = 1;
+    //display correct values
+    var z = subjectObject[subjectSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+    }
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="bg-img">
+  <div class="container">
+    <div class="topnav">
+      <img src="360_F_320947583_DsP6EGSsdKNKSL2k29OlEAexGbsywCsz.jpg" width="58" height="58" style="float:left;opacity:1.0;border-radius:50%;margin-left:30px;">
+	  	<span class="span">  <a style="color:white;padding:19px 14px;font-size:14px;font-family:arial;"><b>AV CONSTRUCTION LTD.</b></a></span>      
+		<a class="a" href="file:///C:/Users/aksha/OneDrive/Desktop/HTM/index.html">HOME</a>
+      <a class="a" href="file:///C:/Users/aksha/OneDrive/Desktop/HTM/about.htm">ABOUT US</a>
+      <a class="a" href="file:///C:/Users/aksha/OneDrive/Desktop/HTM/work.htm">OUR WORK</a>
+      <a class="a" href="file:///C:/Users/aksha/OneDrive/Desktop/HTM/services.htm">SERVICES</a>
+	  <a class="a" href="#">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<div class="leftalign">
+<br>
+<h2><b>AV CONSTRUCTION LTD.</b></h2>
+<br><br>
+<h2><b>Hyderabad Office</b></h2>
+<address><i class="fas fa-map-marker-alt"></i> Quality Services Head Office,Splendid Towers,6th Floor,H.No.1-8-364,437,438,SP.Road,Begumpet,Hyderabad-500003</address>
+<p><i class="fas fa-phone-alt"></i> +91-40-67258809</p>
+<p><i class="fas fa-building"></i> +91-40-67258848</p>
+<a href="#"><i class="fas fa-envelope"></i> aksharpatel201@gmail.com</a>
+<br><br><br><br><br>
+<h2><b>Mumbai Office</b></h2>
+<address><i class="fas fa-map-marker-alt"></i> One Boulevard Street,2nd 3rd & 4th Floor,Lake Boulevard Rd,Pawai,Mumbai-400078</address>
+<p><i class="fas fa-phone-alt"></i> 022-67402901</p>
+<p><i class="fas fa-building"></i> 022-25700178</p>
+<a href="#"><i class="fas fa-envelope"></i> AVconstructions@gmail.com</a>
+<br><br><br><br>
+</div>
+
+<div style="margin-top:15px; margin-left:50%;margin-right:1px;">
+<form style="border:1px solid #ccc">
+  <div class="container1">
+    <h1>CONTACT US</h1>
+	
+    <h5>Please fill in this form to reach to us.</h5>
+    <hr>
+
+    <label for="name"><b>NAME</b></label>
+    <input type="text" placeholder="Enter Name" name="name" required>
+
+    <label for="psw"><b>EMAIL ID</b></label>
+    <input type="text" placeholder="Enter Mail" name="psw" required>
+
+    <label for="psw-repeat"><b>PHONE NUMBER</b></label>
+    <input type="text" placeholder="Enter Phone.no" name="psw-repeat" required>
+	
+	<label for="det"><b>DETAILS</b></label>
+    <input type="text" placeholder="" name="det" required>
+	
+	<form name="form1" id="form1" action="/action_page.php">
+    <select name="subject" id="subject" style="padding:12px;width:100%;">
+    <option value="" selected="selected">What is my query about?</option>
+    </select>
+	</form>
+    <br><br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p>By giving your details you agree to our <a href="#" style="color:dodgerblue">Terms & conditions</a>.</p>
+
+    <div class="clearfix">
+      <button type="submit" class="signupbtn">SUBMIT</button>
+    </div>
+	
+  </div>
+</form>
+</div>
+<br><br><br>
+
+<div class="contain">
+<div class="elements">
+<img src="ap1.jpg" class="round" alt="img" style="width:100px;">
+<br><br>
+<h4><b>Akshar Patel</b></h4>
+<p style="color:#696969;">CEO & Founder</p>
+<p><a href="">akshar07@gmail.com</a></p>
+<br>
+<button onclick="">Contact</button>
+</div>
+<div class="vl"></div>
+<div class="elements">
+<img src="v2.jpg" class="round" alt="img" style="width:100px;">
+<br><br>
+<h4><b>Vishnu Vardhan</b></h4>
+<p style="color:#696969;">CFO & President</p>
+<p><a href="">Vishnu88@gmail.com</a></P>
+<br>
+<button onclick="">Contact</button>
+</div>
+<div class="vl2"></div>
+<div class="elements">
+<img src="tan1.jpg" class="round" alt="img" style="width:100px;">
+<br><br>
+<h4><b>Thanmayee Reddy</b></h4>
+<p style="color:#696969;">Managing Director</p>
+<p><a href="">thanmayee26@gmail.com</a></p>
+<br>
+<button onclick="">Contact</button>
+</div>
+<div class="footer">
+
+ <b style="text-align:center;margin-right:1%;padding:25px;">Copyright <i class="far fa-copyright"></i> 2021- AV CONSTRUCTION LTD. All Rights Reserved<span style="color:rgba(0,0,0,0.0);">AV CONSTRUCTION -</span></b>
+ <span style="bottom:5px;color:#87CEEB;">follow us -</span>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="#" class="fa fa-linkedin"></a>
+
+</div>
+
+</body>
+</html>
